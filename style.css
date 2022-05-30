@@ -32,7 +32,7 @@ ul {
   }
 }
 
-.centered-main-page-element {
+.wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
