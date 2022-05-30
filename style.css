@@ -5,6 +5,11 @@ body {
   font-family: Lato, sans-serif;
 }
 
+ul {
+  margin:0;
+  padding: 0;
+}
+
 .aaa {
   width: 500px;
   margin: 0 auto;
@@ -43,16 +48,7 @@ body {
   display: flex;
 }
 
-ul {
-  margin:0;
-  padding: 0;
-}
-
-li, h3 {
-  list-style:none;
-}
-
-input,button{
+input, button{
   outline:none;
 }
 
@@ -73,6 +69,7 @@ button:hover {
 /* Heading */
 h3,
 label[for='new-task'] {
+  list-style:none;
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -111,6 +108,7 @@ input#new-task {
 
 /* Task list */
 li {
+  list-style:none;
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -138,6 +136,7 @@ li > label {
 li > input[type="text"] {
   width: 226px;
 }
+
 button.delete img {
   height: 2em;
   transform: rotateZ(45deg);
