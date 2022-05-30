@@ -48,7 +48,8 @@ ul {
   display: flex;
 }
 
-input, button{
+input,
+button {
   outline:none;
 }
 
