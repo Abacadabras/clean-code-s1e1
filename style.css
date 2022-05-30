@@ -10,6 +10,11 @@ ul {
   padding: 0;
 }
 
+input,
+button {
+  outline:none;
+}
+
 .header {
   width: 500px;
   margin: 0 auto;
@@ -44,13 +49,8 @@ ul {
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-item__wrapper {
   display: flex;
-}
-
-input,
-button {
-  outline:none;
 }
 
 button {
@@ -68,8 +68,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for='new-task'] {
+.title {
   list-style:none;
   color: #333;
   font-weight: 700;
@@ -80,7 +79,10 @@ label[for='new-task'] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.input {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -93,12 +95,12 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.input:focus {
   color: #333;
 }
 
 /* New Task */
-label[for='new-task'] {
+.add-item__title {
   display: block;
   margin: 0 0 20px;
 }
